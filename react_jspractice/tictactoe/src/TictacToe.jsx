@@ -6,8 +6,8 @@ const Tictactoe = () =>{
     
 
     const [stateArr, setStateArr] = useState(arr);
-    const [player, setplayer] = useState("x")
-    const [win, setWin]= useState(false)
+    const [player, setplayer] = useState("x");
+    const [Win, setWin]= useState(false);
    function checkWinner(player){
      //row 1
      if(stateArr[0]===player && stateArr[1]===player && stateArr[2]===player)
@@ -36,7 +36,7 @@ const Tictactoe = () =>{
    return(
 <div style={{display:"grid",gridTemplateColumns:"auto auto auto"}}>
     {stateArr.map(function(ele,ind){
-        return win === false?
+        return Win === false?
              <button 
             onClick={function(){
             console.log("function working");
@@ -57,11 +57,11 @@ const Tictactoe = () =>{
         >{ele}
         </button>:<button>{ele}</button>
    })}
-   {win===true?<p>player{player === "x"?"o":"x"}has won the match</p>:<></>}
+   {Win===true?<p>player{player === "x"?"o":"x"}has won the match</p>:<></>}
 
 
 </div>
     )
 }
 
-export default TictacToe;
+export default Tictactoe;
