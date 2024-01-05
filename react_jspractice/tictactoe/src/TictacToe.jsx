@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Tictactoe.css"
 const Tictactoe = () =>{
     let arr =[".",".",".",".",".",".",".",".",".",]
+    const [stateArr, setStateArr] = useState(arr);
     return(
 <div style={{display:"grid",gridTemplateColumns:"auto auto auto"}}>
-    {arr.map(function(ele){
-        return <button>{ele}</button>
+    {stateArr.map(function(ele,ind){
+        return <button 
+        onClick={function(){
+            console.log("function working");
+            let temparr = stateArr;
+            temparr[ind]= "x"
+            setStateArr([...temparr])
+        }}
+        
+        
+        >{ele}
+        </button>
     })}
 
 
