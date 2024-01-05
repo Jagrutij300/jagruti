@@ -1,0 +1,7 @@
+.Bio_Container{
+    display: flex;
+    /* flex text are side right or left */
+    justify-content: center;
+    gap: 30px;
+
+}

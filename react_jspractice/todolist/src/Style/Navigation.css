@@ -1,0 +1,11 @@
+.nav_container{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    position: sticky;  
+    /* sticky meand heading contain constant after scrolling up and down */
+    top: 0px;
+    
+}

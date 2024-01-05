@@ -1,0 +1,21 @@
+.Main_Container{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    height: 80vh;
+
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://assets.entrepreneur.com/content/3x2/2000/20191009140007-GettyImages-1053962188.jpeg?format=pjeg&auto=webp&crop=1:1")
+}
+.heading1_Main{
+    padding-top: 20px;
+    
+}
+
+.Main_Container > h5{
+    font-size: 18px;
+    font-weight: 100;
+
+}
